@@ -1,0 +1,121 @@
+qt-heif-image-plugin (0.3.3-1) unstable; urgency=medium
+
+  [ Liang Qi ]
+  * Refactor for qtimageformats
+
+  [ Jake Harr ]
+  * Use libheif C API
+  * debian: Require libheif 1.1
+
+ -- Jake Harr <jakeharr@gmail.com>  Sun, 16 Sep 2018 18:39:44 -0400
+
+qt-heif-image-plugin (0.3.2-1) unstable; urgency=medium
+
+  * Fix reference
+  * Don't use `qInfo()`
+  * debian: Require cmake >= 3.5
+  * debian: Build with more OS versions
+  * Fix shadow warning
+
+ -- Jake Harr <jakeharr@gmail.com>  Mon, 23 Jul 2018 17:26:30 -0400
+
+qt-heif-image-plugin (0.3.1-1) unstable; urgency=medium
+
+  * Avoid copying decoded data during read (#9)
+  * Simplify decoded image movement (#9)
+  * Document invariants
+  * Refactor read state initialization (#10)
+  * Add struct ctor for C++11 (#10)
+
+ -- Jake Harr <jakeharr@gmail.com>  Sun, 22 Jul 2018 17:43:54 -0400
+
+qt-heif-image-plugin (0.3.0-3) unstable; urgency=medium
+
+  * debian/buildtool: Change versioning scheme (#2)
+
+ -- Jake Harr <jakeharr@gmail.com>  Thu, 19 Jul 2018 15:24:15 -0400
+
+qt-heif-image-plugin (0.3.0-2) unstable; urgency=medium
+
+  * debian: Reword description
+
+ -- Jake Harr <jakeharr@gmail.com>  Wed, 18 Jul 2018 04:07:01 -0400
+
+qt-heif-image-plugin (0.3.0-1) unstable; urgency=medium
+
+  * Use ID list to jump between images (#6)
+  * Log file type brand (#7)
+  * Initialize closer to usage
+  * Improve `loadContext()` doc
+  * cmake: Move to src subdir
+  * iohandler: Be consistent with header guards
+  * contextwriter: Remove unnecessary constants
+  * iohandler: Fail if libheif is inconsistent with top-level IDs
+  * debian: Add pkg-config build dependency (#2)
+  * debian: Change maintainer (#2)
+  * debian: Build using git-buildpackage (#2)
+  * Add changelog
+
+ -- Jake Harr <jakeharr@gmail.com>  Wed, 18 Jul 2018 03:38:03 -0400
+
+qt-heif-image-plugin (0.2.1-1) unstable; urgency=medium
+
+  * cmake: Fix DESTDIR usage; make compatible with older cmake
+  * Ignore build and temporary dirs
+  * Add Dockerfile to build package
+  * README: Clean up; add info
+  * README: Add blurb about lack of metadata
+  * README: Clarify lack of support for image sequences
+  * Determine format more robustly
+  * Fix checking ftyp brand for "heix"
+  * README: Link to dumageview
+  * cmake: Fix sanitizer flags for linker
+  * Fix format test in `Plugin::capabilities`
+  * Change local Vim settings for Qt style
+  * Indent 4 spaces
+  * Change brace-newline style
+  * Don't shadow function name with parameter
+  * Use uppercase names for enum values
+  * iohandler: Rename source/destination variables
+  * iohandler: Document ReadState somewhat
+  * iohandler: Move deleted copy ctor/assignment to public section
+  * plugin: Use default ctor/dtor
+  * Remove util.h
+  * Reduce libheif requirement to version 1.2
+  * README: Add nomacs as an application
+  * Fix include order
+  * Remove unnecessary includes
+
+ -- Jake Harr <jakeharr@gmail.com>  Fri, 13 Jul 2018 01:44:32 -0400
+
+qt-heif-image-plugin (0.2-1) unstable; urgency=medium
+
+  [ Xu Shaohua ]
+  * Ignore deb object files
+  * debian: Update project homepage
+
+  [ Jake Harr ]
+  * Fix giant memory leak
+  * cmake: Add sanitizer flags
+  * Remove redundant data copy; add checks
+  * cmake: Require libheif 1.3
+  * Change macro/namespace/lib names
+  * Improve logging
+  * Add write checks
+  * Sort includes
+  * debian: Require libheif >= 1.3
+  * cmake: Use DESTDIR if available
+
+ -- Jake Harr <jakeharr@gmail.com>  Tue, 26 Jun 2018 14:52:06 -0400
+
+qt-heif-image-plugin (0.1-2) unstable; urgency=medium
+
+  * Fixed header parse error
+
+ -- Xu Shaohua <xushaohua2016@outlook.com>  Mon, 04 Jun 2018 20:08:18 +0800
+
+qt-heif-image-plugin (0.1-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Xu Shaohua <xushaohua2016@outlook.com>  Mon, 04 Jun 2018 19:09:04 +0800
