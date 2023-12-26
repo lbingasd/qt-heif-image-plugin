@@ -5,13 +5,17 @@
 ## libheif 编译
 You can build and install libheif using the vcpkg dependency manager:
 git clone https://github.com/Microsoft/vcpkg.git
+安装保存路径形如：C:\code\vcpkg\installed\x64-windows
+```
 cd vcpkg
 ./bootstrap-vcpkg.bat
 ./vcpkg integrate install
 ./vcpkg install libheif
+```
 
 # 编译 qt-heif-image-plugin
 ```
+修改src内的cmake 关于libheif存储路径
 $ mkdir build
 $ cd build
 $ cmake ..
