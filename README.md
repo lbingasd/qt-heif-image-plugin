@@ -1,4 +1,4 @@
-# qt image 插件去读Apple .heic文件格式
+# qt6 image 插件去读Apple .heic文件格式
 # 依赖
 [HEIF]: https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format
 [libheif]: https://github.com/strukturag/libheif
